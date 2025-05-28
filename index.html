@@ -1,56 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Servicios de Spa y Cuidado Corporal | Spa312</title>
-  <meta name="description"
-    content="Descubre nuestros tratamientos de spa facial y corporal en Chicago. Relájate, rejuvénece y siéntete renovado con Spa312." />
-
-  <meta property="og:title" content="Spa312 – Tratamientos de Spa Facial y Corporal" />
-  <meta property="og:description"
-    content="Relájate con nuestros servicios de spa y cuidado corporal en Chicago. ¡Reserva hoy tu cita!" />
-  <meta property="og:image" content="https://Spa312.github.io/assets/img/spa-banner.jpg" />
-  <meta property="og:url" content="https://Spa312.github.io" />
-
-  <link rel="canonical" href="https://Spa312.github.io" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spa312 – Tratamientos de Spa y Cuidado Corporal</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Bienvenido a Spa312</h1>
-    <p>Tratamientos faciales y corporales de primer nivel en Chicago</p>
+  <!-- HEADER / NAVEGACIÓN -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <a href="/"><img src="/assets/img/logo.png" alt="Spa312 logo"></a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#iot">IoT Guide</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Navegación principal -->
-  <nav>
-    <a href="/">Inicio</a> |
-    <a href="/blog/">📰 Blog de Spa312</a>
-  </nav>
+  <!-- HERO BANNER -->
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1>Bienvenido a Spa312</h1>
+      <p>Tratamientos faciales y corporales de primer nivel en Chicago</p>
+      <a href="#servicios" class="btn-primary">Ver Servicios</a>
+    </div>
+  </section>
 
   <main>
-    <section>
-      <h2>Nuestros Servicios</h2>
-      <ul>
-        <li>Facial rejuvenecedor</li>
-        <li>Masaje relajante corporal</li>
-        <li>Tratamiento anti-estrés</li>
-      </ul>
+    <!-- SERVICIOS -->
+    <section id="servicios" class="servicios">
+      <div class="container">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+          <li>Facial rejuvenecedor</li>
+          <li>Masaje relajante corporal</li>
+          <li>Tratamiento anti-estrés</li>
+          <li>CoolSculpting</li>
+          <li>Inyectables y Botox</li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Sección destacada de Blog -->
-    <section>
-      <h2>Últimos artículos del Blog</h2>
-      <ul>
-        <li><a href="/blog/integrating-iot-sensors.html">Integrating IoT Sensors to Track Your Weight Loss Progress</a></li>
-      </ul>
-      <p><a href="/blog/">Ver todos los artículos →</a></p>
+    <!-- BLOG -->
+    <section id="blog" class="blog-seccion">
+      <div class="container">
+        <h2>Últimos artículos del Blog</h2>
+        <ul>
+          <li><a href="/blog/limpieza-oficinas.html">Cómo elegir servicio de limpieza de oficinas en Chicago</a></li>
+          <li><a href="/blog/integrating-iot-sensors.html">Integrating IoT Sensors to Track Your Weight Loss Progress</a></li>
+        </ul>
+        <p><a href="/blog/" class="btn-secondary">Ver todos los artículos</a></p>
+      </div>
+    </section>
+
+    <!-- GUÍA RÁPIDA IoT -->
+    <section id="iot" class="iot-seccion">
+      <div class="container">
+        <h2>Guía rápida: IoT en tu Spa</h2>
+        <p>Descubre cómo integrar sensores IoT para monitorizar tu progreso de forma automática.</p>
+        <a href="/blog/integrating-iot-sensors.html" class="btn-secondary">Leer guía completa</a>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p>¿Tienes dudas o quieres agendar tu cita?<br>
+          Escríbenos a <a href="mailto:info@spa312.com">info@spa312.com</a> o llámanos al <strong>(312) 555-1234</strong>.</p>
+        <form action="#" class="form-contacto">
+          <input type="text" name="nombre" placeholder="Tu nombre" required>
+          <input type="email" name="email" placeholder="Tu correo" required>
+          <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+          <button type="submit" class="btn-primary">Enviar mensaje</button>
+        </form>
+      </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Spa312. Todos los derechos reservados.</p>
+    <div class="container">
+      <p>© 2025 Spa312. Todos los derechos reservados.</p>
+    </div>
   </footer>
 </body>
 </html>
