@@ -210,5 +210,51 @@ footer {
   text-align: center;
   font-size: 0.9rem;
 }
+/* === SECCIÓN EXPERT === */
+.expert-section {
+  padding: 80px 0;
+  background: #eef2f5;
+}
+.expert-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+.expert-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.expert-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.expert-buttons {
+  display: flex;
+  gap: 15px;
+}
+.expert-buttons .btn-primary {
+  background: #0077cc;
+  color: #fff;
+}
+.expert-buttons .btn-secondary {
+  background: #444;
+  color: #fff;
+}
+.expert-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .expert-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .expert-buttons {
+    justify-content: center;
+  }
+}
+
 
 
