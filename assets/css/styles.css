@@ -1,37 +1,98 @@
-/* styles.css: estilos globales */
+/* === SECCIONES ADICIONALES === */
 
-body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+/* Blog */
+.blog-seccion {
+  padding: 80px 0;
+  background: #ffffff;
 }
-
-header, footer {
+.blog-seccion h2 {
   text-align: center;
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-top: 2rem;
   margin-bottom: 1rem;
 }
-
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
+.blog-seccion ul {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto 1rem;
+  padding: 0;
+}
+.blog-seccion li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+.blog-seccion a {
+  color: #0077cc;
+  text-decoration: none;
+}
+.blog-seccion a:hover {
+  text-decoration: underline;
+}
+.btn-secondary {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #0077cc;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background .3s;
+}
+.btn-secondary:hover {
+  background: #005fa3;
 }
 
-footer p {
+/* IoT Quick Guide */
+.iot-seccion {
+  padding: 80px 0;
+  background: #f2f8fc;
+  text-align: center;
+}
+.iot-seccion h2 {
+  margin-bottom: 0.5rem;
+}
+.iot-seccion p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Contacto */
+.contacto {
+  padding: 80px 0;
+  background: #ffffff;
+}
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.contacto p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+.form-contacto {
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  gap: 15px;
+}
+.form-contacto input,
+.form-contacto textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-contacto button {
+  justify-self: center;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer (ya lo tenías, pero asegúrate de que quede abajo) */
+footer {
+  background: #222;
+  color: #ccc;
+  padding: 20px 0;
+  text-align: center;
   font-size: 0.9rem;
-  color: #666;
-  margin-top: 2rem;
 }
