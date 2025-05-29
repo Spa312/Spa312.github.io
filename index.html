@@ -1,45 +1,47 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spa312 – Tratamientos de Spa y Cuidado Corporal</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>Spa312 - Spa Treatments and Body Care</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-
-  <!-- HEADER / NAVEGACIÓN -->
+  <!-- HEADER / NAVIGATION -->
   <header class="site-header">
-    <div class="container">
+    <div class="container header-container">
       <div class="logo">
-        <a href="/"><img src="assets/img/logo.png" alt="Spa312 logo" /></a>
+        <a href="/"><img src="assets/img/cropped-cropped-SPA-312-LOGO-2-166x55 (1).png" alt="Spa312 logo" /></a>
       </div>
       <nav class="main-nav">
         <ul>
-          <li><a href="#hero">Inicio</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#iot">IoT Guide</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#hero" class="menu1">Home</a></li>
+          <li><a href="#services" class="menu1">Services</a></li>
+          <li><a href="#blog" class="menu1">Blog</a></li>
+          <li><a href="#iot" class="menu1">IoT Guide</a></li>
+          <li><a href="#contact" class="menu1">Contact</a></li>
         </ul>
       </nav>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
     </div>
   </header>
 
   <!-- HERO BANNER -->
   <section id="hero" class="hero">
-    <div class="hero-overlay"></div>
     <div class="hero-content container">
-      <h1>Bienvenido a Spa312</h1>
-      <p>Tratamientos faciales y corporales de primer nivel en Chicago</p>
-      <a href="#servicios" class="btn-primary">Ver Servicios</a>
+      <h1>Welcome to Spa312</h1>
+      <p>Top-level facial and body treatments in Chicago</p>
+      <a href="#services" class="btn btn-primary">View Services</a>
     </div>
   </section>
   
-  <!-- SECCIÓN EXPERT -->
+  <!-- EXPERT SECTION -->
   <section class="expert-section">
     <div class="container expert-grid">
-      <!-- Texto + Botones -->
+      <!-- Text + Buttons -->
       <div class="expert-text">
         <h2>Cleaning Services Expert</h2>
         <p>
@@ -50,65 +52,86 @@
           <a href="https://spa312.com/botox-chicago/">Chicago</a> home or business.
         </p>
         <div class="expert-buttons">
-          <a href="#contacto" class="btn-primary">Agendar servicio</a>
-          <a href="#servicios" class="btn-secondary">Ver más servicios</a>
+          <a href="#contact" class="btn btn-primary">Schedule Service</a>
+          <a href="#services" class="btn btn-secondary">View More Services</a>
         </div>
       </div>
-      <!-- Imagen -->
+      <!-- Image -->
       <div class="expert-image">
-        <img src="assets/img/expert-cleaning.jpg" alt="Expert Cleaning Team" />
+        <img src="https://images.unsplash.com/photo-1595475884562-073c30d45670?q=80" alt="Expert Cleaning Team" />
       </div>
     </div>
   </section>
 
   <main>
-    <!-- SECCIÓN SERVICIOS -->
-    <section id="servicios" class="servicios">
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services">
       <div class="container">
-        <h2>Nuestros Servicios</h2>
+        <h2>Our Services</h2>
         <ul>
-          <li>Facial rejuvenecedor</li>
-          <li>Masaje relajante corporal</li>
-          <li>Tratamiento anti-estrés</li>
-          <li>CoolSculpting</li>
-          <li>Inyectables y Botox</li>
+          <li><i class="fas fa-spa"></i> Rejuvenating Facial</li>
+          <li><i class="fas fa-hands"></i> Relaxing Body Massage</li>
+          <li><i class="fas fa-cloud"></i> Anti-Stress Treatment</li>
+          <li><i class="fas fa-snowflake"></i> CoolSculpting</li>
+          <li><i class="fas fa-syringe"></i> Injectables and Botox</li>
         </ul>
       </div>
     </section>
 
-    <!-- SECCIÓN BLOG -->
-    <section id="blog" class="blog-seccion">
+    <!-- BLOG SECTION -->
+    <section id="blog" class="blog-section">
       <div class="container">
-        <h2>Últimos artículos del Blog</h2>
-        <ul>
-          <li><a href="blog/limpieza-oficinas.html">Cómo elegir servicio de limpieza de oficinas en Chicago</a></li>
-          <li><a href="blog/integrating-iot-sensors.html">Integrating IoT Sensors to Track Your Weight Loss Progress</a></li>
-        </ul>
-        <p><a href="blog/index.html" class="btn-secondary">Ver todos los artículos</a></p>
+        <h2>Latest Blog Articles</h2>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <div class="blog-image">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80" alt="Office Cleaning">
+            </div>
+            <div class="blog-content">
+              <h3>How to Choose an Office Cleaning Service in Chicago</h3>
+              <p>Practical tips for selecting the best professional cleaning service for your workspace.</p>
+              <a href="blog/limpieza-oficinas.html" class="blog-link">Read more →</a>
+            </div>
+          </div>
+          
+          <div class="blog-card">
+            <div class="blog-image">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80" alt="IoT in Health">
+            </div>
+            <div class="blog-content">
+              <h3>Integrating IoT Sensors to Track Your Weight Loss Progress</h3>
+              <p>Discover how IoT technology can help you monitor your weight loss progress.</p>
+              <a href="blog/integrating-iot-sensors.html" class="blog-link">Read more →</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-btn">
+          <a href="blog/index.html" class="btn btn-secondary">View All Articles</a>
+        </div>
       </div>
     </section>
 
-    <!-- SECCIÓN IoT -->
-    <section id="iot" class="iot-seccion">
+    <!-- IOT SECTION -->
+    <section id="iot" class="iot-section">
       <div class="container">
-        <h2>Guía rápida: IoT en tu Spa</h2>
-        <p>Descubre cómo integrar sensores IoT para monitorizar tu progreso de forma automática.</p>
-        <a href="blog/integrating-iot-sensors.html" class="btn-secondary">Leer guía completa</a>
+        <h2>Quick Guide: IoT in Your Spa</h2>
+        <p>Discover how to integrate IoT sensors to automatically monitor your progress.</p>
+        <a href="blog/integrating-iot-sensors.html" class="btn btn-secondary">Read Full Guide</a>
       </div>
     </section>
 
-    <!-- SECCIÓN CONTACTO -->
-    <section id="contacto" class="contacto">
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
       <div class="container">
-        <h2>Contacto</h2>
-        <p>¿Tienes dudas o quieres agendar tu cita?<br>
-          Escríbenos a <a href="mailto:info@spa312.com">info@spa312.com</a> o llámanos al <strong>(312) 555-1234</strong>.
+        <h2>Contact Us</h2>
+        <p>Do you have questions or want to schedule your appointment?<br>
+          Email us at <a href="mailto:info@spa312.com">info@spa312.com</a> or call us at <strong>(312) 555-1234</strong>.
         </p>
-        <form action="#" class="form-contacto">
-          <input type="text" name="nombre" placeholder="Tu nombre" required />
-          <input type="email" name="email" placeholder="Tu correo" required />
-          <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
-          <button type="submit" class="btn-primary">Enviar mensaje</button>
+        <form action="#" class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
       </div>
     </section>
@@ -117,9 +140,85 @@
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      <p>© 2025 Spa312. Todos los derechos reservados.</p>
+      <div class="footer-container">
+        <div class="footer-col footer-logo">
+          <img src="https://via.placeholder.com/200x60/ffffff/2e7d32?text=Spa312" alt="Spa312 logo">
+          <p>Top-level facial and body treatments in Chicago.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#iot">IoT Guide</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3 class="footer-title">Contact</h3>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Spa Street, Chicago</li>
+            <li><i class="fas fa-phone"></i> (312) 555-1234</li>
+            <li><i class="fas fa-envelope"></i> info@spa312.com</li>
+            <li><i class="fas fa-clock"></i> Mon-Fri: 9am - 7pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2025 Spa312. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
+  <script>
+    // Mobile menu
+    const hamburger = document.querySelector('.hamburger');
+    const mainNav = document.querySelector('.main-nav');
+    
+    hamburger.addEventListener('click', () => {
+      mainNav.classList.toggle('active');
+    });
+    
+    // Header change on scroll
+    const header = document.querySelector('.site-header');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const target = document.querySelector(this.getAttribute('href'));
+        
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 80,
+            behavior: 'smooth'
+          });
+          
+          // Close mobile menu if open
+          if (mainNav.classList.contains('active')) {
+            mainNav.classList.remove('active');
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
